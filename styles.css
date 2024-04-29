@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6e4ea; /* Baby pink background */
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.info-block {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-heading {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.info-text {
+    color: #555;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.word-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.word-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 10px;
+}
+
+.word-box {
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.word-box.clicked.correct {
+    background-color: #00cc00;
+}
+
+.word-box.clicked.wrong {
+    background-color: #ff3333;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #555;
+}
+
+.btn:hover {
+    background-color: #777;
+}

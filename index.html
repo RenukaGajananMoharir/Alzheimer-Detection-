@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Alzheimer Detection</h1>
+        <div class="header-info">
+            <div class="info-block">
+                <h2 class="info-heading">About Alzheimer's Disease</h2>
+                <p class="info-text">Alzheimer's disease is a progressive disorder that causes brain cells to waste away (degenerate) and die. Alzheimer's disease is the most common cause of dementia — a continuous decline in thinking, behavioral and social skills that disrupts a person's ability to function independently.</p>
+            </div>
+            <div class="info-block">
+                <h2 class="info-heading">Symptoms of Alzheimer's Disease</h2>
+                <ul class="info-list">
+                    <li>Memory loss</li>
+                    <li>Difficulty performing familiar tasks</li>
+                    <li>Problems with language</li>
+                    <li>Disorientation to time and place</li>
+                    <li>Poor or decreased judgment</li>
+                    <li>Problems with abstract thinking</li>
+                    <li>Misplacing things</li>
+                    <li>Changes in mood or behavior</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h2 class="info-heading">Prevention of Alzheimer's Disease</h2>
+                <ul class="info-list">
+                    <li>Regular physical exercise</li>
+                    <li>Healthy diet</li>
+                    <li>Mental stimulation</li>
+                    <li>Quality sleep</li>
+                    <li>Stay socially active</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div id="start-container">
+            <button id="start-game-btn" class="btn btn-primary" onclick="startGame()">Start Game</button>
+        </div>
+        <div id="words-list" class="container" style="display: none;">
+            <h2 class="heading">Word List</h2>
+            <ul id="word-list" class="word-list"></ul>
+            <button id="start-test-btn" class="btn btn-secondary" onclick="startTest()">Start My Memory Test</button>
+        </div>
+        <div id="game-container" class="container" style="display: none;">
+            <h2 class="heading">Memory Test</h2>
+            <div id="word-boxes" class="word-boxes"></div>
+            <button id="submit-btn" class="btn btn-secondary" onclick="submitAnswers()">Submit Answers</button>
+        </div>
+        <div id="result-container" class="container" style="display: none;">
+            <h2 class="heading">Test Result</h2>
+            <p>Correct Matches: <span id="correct-matches">0</span></p>
+            <p>Wrong Matches: <span id="wrong-matches">0</span></p>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
